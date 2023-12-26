@@ -4,8 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
-import com.artonov.mov.HomeActivity
 import com.artonov.mov.databinding.ActivityOnboardingFirstBinding
+import com.artonov.mov.SignInActivity
 
 class OnboardingFirstActivity : AppCompatActivity() {
 
@@ -27,7 +27,7 @@ class OnboardingFirstActivity : AppCompatActivity() {
         }
 
         binding.btnSkip.setOnClickListener() {
-            val intent = Intent(this@OnboardingFirstActivity, HomeActivity::class.java)
+            val intent = Intent(this@OnboardingFirstActivity, SignInActivity::class.java)
             startActivity(intent)
             overridePendingTransition(androidx.appcompat.R.anim.abc_fade_in, androidx.appcompat.R.anim.abc_fade_out)
         }

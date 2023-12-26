@@ -58,6 +58,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="48dp"
         android:text="LANJUTKAN"
+        android:textSize="16sp"
         android:fontFamily="@font/montserrat_semibold"
         android:backgroundTint="@color/accent_red"
         app:circularflow_radiusInDP="24dp"

@@ -4,9 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
-import com.artonov.mov.HomeActivity
-import com.artonov.mov.R
 import com.artonov.mov.databinding.ActivityOnboardingThirdBinding
+import com.artonov.mov.SignInActivity
 
 class OnboardingThirdActivity : AppCompatActivity() {
 
@@ -23,7 +22,7 @@ class OnboardingThirdActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnStart.setOnClickListener() {
-            val intent = Intent(this@OnboardingThirdActivity, HomeActivity::class.java)
+            val intent = Intent(this@OnboardingThirdActivity, SignInActivity::class.java)
             startActivity(intent)
             overridePendingTransition(androidx.appcompat.R.anim.abc_fade_in, androidx.appcompat.R.anim.abc_fade_out)
         }
