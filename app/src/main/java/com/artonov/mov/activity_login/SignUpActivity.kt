@@ -1,4 +1,4 @@
-package com.artonov.mov
+package com.artonov.mov.activity_login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

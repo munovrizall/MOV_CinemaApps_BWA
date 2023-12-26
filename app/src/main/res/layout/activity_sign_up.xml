@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_darkblue"
-    tools:context=".SignInActivity">
+    tools:context=".activity_login.SignInActivity">
 
     <Button
         android:id="@+id/btnBack"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:background="#00FFFFFF"
         android:foreground="@drawable/ic_chevron_left"
         app:layout_constraintBottom_toBottomOf="@+id/tvSignUp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tvSignUp" />
+
     <TextView
         android:id="@+id/tvSignUp"
         android:layout_width="wrap_content"
@@ -53,6 +54,7 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:fontFamily="@font/montserrat_medium"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,6 +84,7 @@
         android:textSize="16sp"
         android:fontFamily="@font/montserrat_medium"
         android:inputType="textPassword"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,7 +113,8 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:fontFamily="@font/montserrat_medium"
-        android:inputType="textPassword"
+        android:inputType="text"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -139,7 +143,8 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:fontFamily="@font/montserrat_medium"
-        android:inputType="textPassword"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

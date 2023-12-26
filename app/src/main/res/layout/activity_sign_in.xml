@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_darkblue"
-    tools:context=".SignInActivity">
+    tools:context=".activity_login.SignInActivity">
 
     <ImageView
         android:id="@+id/ivImage"
@@ -53,6 +53,7 @@
         android:textColor="@color/white"
         android:textSize="16sp"
         android:fontFamily="@font/montserrat_medium"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,6 +83,7 @@
         android:textSize="16sp"
         android:fontFamily="@font/montserrat_medium"
         android:inputType="textPassword"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

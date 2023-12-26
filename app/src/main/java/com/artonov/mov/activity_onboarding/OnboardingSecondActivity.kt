@@ -1,4 +1,4 @@
-package com.artonov.mov.onboarding
+package com.artonov.mov.activity_onboarding
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

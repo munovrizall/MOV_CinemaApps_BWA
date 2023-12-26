@@ -1,10 +1,9 @@
-package com.artonov.mov
+package com.artonov.mov.activity_login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
-import com.artonov.mov.R
 import com.artonov.mov.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {

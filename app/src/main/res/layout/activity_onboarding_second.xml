@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_darkblue"
-    tools:context=".onboarding.OnboardingSecondActivity">
+    tools:context=".activity_onboarding.OnboardingSecondActivity">
 
     <ImageView
         android:id="@+id/ivImage"

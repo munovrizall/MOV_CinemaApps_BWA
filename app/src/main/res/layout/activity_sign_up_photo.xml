@@ -5,52 +5,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary_darkblue"
-    tools:context=".activity_onboarding.OnboardingFirstActivity">
+    tools:context=".activity_login.SignInActivity">
 
-    <ImageView
-        android:id="@+id/ivImage"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:background="#00FFFFFF"
+        android:foreground="@drawable/ic_chevron_left"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPhoto"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25"
-        app:srcCompat="@drawable/onboarding_first" />
+        app:layout_constraintTop_toTopOf="@+id/tvPhoto" />
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tvPhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/montserrat_semibold"
-        android:text="@string/onboarding_first_title"
+        android:text="Photo"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvSubtitle"
-        android:layout_width="0dp"
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="64dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="64dp"
-        android:fontFamily="@font/montserrat_light"
-        android:text="@string/onboarding_first_subtitle"
-        android:textAlignment="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Welcome,\nMunovrizall"
         android:textColor="@color/white"
-        android:textSize="16sp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPhoto" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/user_photo" />
 
     <Button
-        android:id="@+id/btnNext"
+        android:id="@+id/btnLogin"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
@@ -58,32 +65,32 @@
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/accent_red"
         android:fontFamily="@font/montserrat_semibold"
-        android:text="LANJUTKAN"
+        android:text="SIMPAN DAN LANJUTKAN"
         android:textSize="16sp"
-
+        android:visibility="invisible"
         app:circularflow_radiusInDP="24dp"
+        app:layout_constraintBottom_toTopOf="@id/btnSignUp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btnSkip"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnSkip"
+        android:id="@+id/btnSignUp"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="48dp"
-        android:text="LEWATI PERKENALAN"
-        android:textSize="16sp"
-
-        android:fontFamily="@font/montserrat"
         android:backgroundTint="@color/accent_grey"
+        android:fontFamily="@font/montserrat"
+        android:text="UPLOAD NANTI"
+        android:textSize="16sp"
         app:circularflow_radiusInDP="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

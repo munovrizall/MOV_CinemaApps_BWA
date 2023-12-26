@@ -13,22 +13,28 @@
         android:theme="@style/Theme.MOV"
         tools:targetApi="31">
         <activity
-            android:name=".SignInActivity"
+            android:name=".SelectSeatActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_login.SignInActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_login.SignUpActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".onboarding.OnboardingFirstActivity"
+            android:name=".activity_onboarding.OnboardingFirstActivity"
             android:exported="false" />
         <activity
-            android:name=".onboarding.OnboardingSecondActivity"
+            android:name=".activity_onboarding.OnboardingSecondActivity"
             android:exported="false" />
         <activity
-            android:name=".onboarding.OnboardingThirdActivity"
+            android:name=".activity_onboarding.OnboardingThirdActivity"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"

@@ -1,11 +1,11 @@
-package com.artonov.mov.onboarding
+package com.artonov.mov.activity_onboarding
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
 import com.artonov.mov.databinding.ActivityOnboardingThirdBinding
-import com.artonov.mov.SignInActivity
+import com.artonov.mov.activity_login.SignInActivity
 
 class OnboardingThirdActivity : AppCompatActivity() {
 
