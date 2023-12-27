@@ -12,12 +12,6 @@ class OnboardingThirdActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingThirdBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        getWindow().setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN
-        );
-
         binding = ActivityOnboardingThirdBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

@@ -13,10 +13,6 @@ class OnboardingSecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityOnboardingSecondBinding.inflate(layoutInflater)
-
-        getWindow().setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(binding.root)
 
         binding.btnNext.setOnClickListener() {

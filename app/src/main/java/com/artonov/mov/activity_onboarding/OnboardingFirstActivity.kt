@@ -14,10 +14,6 @@ class OnboardingFirstActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityOnboardingFirstBinding.inflate(layoutInflater)
-        getWindow().setFlags(
-            WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         setContentView(binding.root)
 
         binding.btnNext.setOnClickListener() {
