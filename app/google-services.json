@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "223048619004",
+    "project_id": "mov-cinema-app",
+    "storage_bucket": "mov-cinema-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223048619004:android:acbf9297785d1d82cc1879",
+        "android_client_info": {
+          "package_name": "com.artonov.mov"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcP7U3_H0jq8tSLHoYjh7fwaF_kYFSxrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

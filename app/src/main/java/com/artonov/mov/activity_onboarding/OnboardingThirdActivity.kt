@@ -16,6 +16,7 @@ class OnboardingThirdActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnStart.setOnClickListener() {
+            finishAffinity()
             val intent = Intent(this@OnboardingThirdActivity, SignInActivity::class.java)
             startActivity(intent)
             overridePendingTransition(androidx.appcompat.R.anim.abc_fade_in, androidx.appcompat.R.anim.abc_fade_out)
