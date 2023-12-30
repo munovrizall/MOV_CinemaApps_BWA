@@ -41,6 +41,9 @@
             android:name=".activity_login.SignUpActivity"
             android:exported="false" />
         <activity
+            android:name=".activity_login.SignUpPhotoActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
