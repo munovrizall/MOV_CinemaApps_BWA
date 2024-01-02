@@ -1,22 +1,17 @@
 package com.artonov.mov.activity_login
 
 import android.content.Intent
-import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.WindowManager
 import android.widget.Toast
-import com.artonov.mov.HomeActivity
+import com.artonov.mov.activity_home.HomeActivity
 import com.artonov.mov.databinding.ActivitySignInBinding
 import com.artonov.mov.utils.Preferences
-import com.google.android.material.snackbar.Snackbar
-import com.google.firebase.Firebase
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.database
 
 class SignInActivity : AppCompatActivity() {
 
@@ -48,10 +43,10 @@ class SignInActivity : AppCompatActivity() {
             password = binding.etPassword.text.toString()
 
             if (username.isBlank()) {
-                binding.etUsername.setError("Username tidak boleh kosong!")
+                binding.etUsername.error = "Username tidak boleh kosong!"
                 binding.etUsername.requestFocus()
             } else if (password.isBlank()) {
-                binding.etPassword.setError("Password tidak boleh kosong!")
+                binding.etPassword.error = "Password tidak boleh kosong!"
                 binding.etPassword.requestFocus()
             } else {
                 pushLogin(username, password)

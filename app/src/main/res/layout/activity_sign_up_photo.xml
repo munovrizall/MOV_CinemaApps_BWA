@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvPhoto" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ivProfile"
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,8 +56,17 @@
         app:layout_constraintVertical_bias="0.5"
         app:srcCompat="@drawable/user_photo" />
 
+    <ImageView
+        android:id="@+id/btnAdd"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_oval_red"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfile"
+        app:layout_constraintEnd_toEndOf="@+id/ivProfile" />
+
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnSave"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
@@ -69,13 +78,13 @@
         android:textSize="16sp"
         android:visibility="invisible"
         app:circularflow_radiusInDP="24dp"
-        app:layout_constraintBottom_toTopOf="@id/btnSignUp"
+        app:layout_constraintBottom_toTopOf="@id/btnHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnSignUp"
+        android:id="@+id/btnHome"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="24dp"
